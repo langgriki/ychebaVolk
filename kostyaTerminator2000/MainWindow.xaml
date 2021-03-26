@@ -1,0 +1,38 @@
+﻿<Window x:Class="kostyaTerminator2000.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kostyaTerminator2000"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Viewbox Name="imageContainer" Grid.Column="1" Grid.Row="1">
+            <Image x:Name="imagePanel" Grid.Column="1" Grid.Row="1" Source="Images/meinRespecturing.jpg"  MouseMove="imagePanel_MouseMove" Stretch="Uniform"/>
+        </Viewbox>
+        <StackPanel Grid.Column="1" Grid.Row="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="firstRadioButton" HorizontalAlignment="Center" Grid.Column="0"/>
+                <RadioButton x:Name="secondRadioButtton" HorizontalAlignment="Center" Grid.Column="1"/>
+                <RadioButton x:Name="thirdRadioButton" HorizontalAlignment="Center" Grid.Column="2"/>
+            </Grid>
+        </StackPanel>
+
+        <TextBlock Name="ayeText" Text="aye"/>
+    </Grid>
+</Window>
